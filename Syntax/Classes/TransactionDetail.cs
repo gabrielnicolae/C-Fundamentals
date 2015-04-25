@@ -1,6 +1,7 @@
 ﻿namespace Classes
 {
-    public class TransactionDetail
+
+    public partial class TransactionDetail
     {
         public decimal? Amount;
         internal decimal? Tax;
@@ -20,5 +21,14 @@
                 this.Amount, this.Tax, currentCurrency, this.IsValid.HasValue && (bool)this.IsValid ? string.Format("Yes") : string.Format("No"));
 
         }
+    }
+
+    public partial class TransactionDetail
+    {
+        public void Print()
+        {
+            System.Console.WriteLine(this.Amount);
+        }
+
     }
 }

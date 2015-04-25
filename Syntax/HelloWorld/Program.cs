@@ -6,8 +6,14 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.Write("Hello World!");
-            Console.ReadKey();
+
         }
+
+        public void Execute()
+        {
+            Execute();
+        }
+
+
     }
 }
